@@ -82,6 +82,8 @@ public class usuarioPestaniaContinuarAgregarHabitacion extends JPanel {
 		panelFinal.setBackground(parametros.getColorCuerpo());
 		panelFinal.setLayout(new BorderLayout());
 
+		ArrayList<Integer> indexi = new ArrayList<>();
+
 		JButton botonContinuar = new JButton("Agregar habitación");
 		botonContinuar.setPreferredSize(new Dimension(200,100));
 		botonContinuar.addActionListener(event -> {
@@ -150,6 +152,7 @@ public class usuarioPestaniaContinuarAgregarHabitacion extends JPanel {
 						controlador.agregarHabitacionAReserva(hotel.getReservas().get(doc).get(indexReserva), hotel.getHabitacionesOcupadasHotel().get(habOcup.getTipoHabitacion()).get(habOcup.getId()).get(last));
 					}
 				}
+				indexi.add(indexReserva);
 			}
 			
 		});
