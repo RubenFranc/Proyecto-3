@@ -168,12 +168,12 @@ public class recepcionPestaniaContinuarAgregarHabitacion extends JPanel {
 	        	panelFinal.revalidate();
 	        	panelFinal.repaint();
 			}
-//			JOptionPane.showMessageDialog(null, "Reserva a nombre de " + nom + " creada.");
-//			JPanel pestaniaCrearReserva= recepcionPestaniaCrearReserva.getPestania(hotel);
-//        	panelFinal.removeAll();
-//        	panelFinal.add(pestaniaCrearReserva, BorderLayout.CENTER);
-//        	panelFinal.revalidate();
-//        	panelFinal.repaint();
+			JOptionPane.showMessageDialog(null, "Reserva a nombre de " + nom + " creada.");
+			JPanel pestaniaCrearReserva= recepcionPestaniaCrearReserva.getPestania(hotel);
+        	panelFinal.removeAll();
+        	panelFinal.add(pestaniaCrearReserva, BorderLayout.CENTER);
+        	panelFinal.revalidate();
+        	panelFinal.repaint();
 		});
 		
 		
