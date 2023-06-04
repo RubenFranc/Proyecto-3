@@ -30,7 +30,7 @@ public class GraficaVentasServicios {
         ArrayList<String> productos = new ArrayList<>();
         ArrayList<Integer> valores = new ArrayList<>();
         for (String nombre: nombres) {
-        	productos.add(nombre + "\n ($" + Double.toString(hotel.getServiciosHotel().get(nombre).getPrecio()) + ")");
+        	productos.add(nombre + "\n ($" + Double.toString(hotel.getServiciosHotel().get(nombre).getPrecio()) + " c/u)");
         	valores.add(hotel.getServiciosHotel().get(nombre).getVecesOfrecido());
         }
         
