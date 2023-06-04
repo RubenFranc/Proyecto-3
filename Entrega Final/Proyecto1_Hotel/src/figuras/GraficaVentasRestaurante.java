@@ -30,7 +30,7 @@ public class GraficaVentasRestaurante {
         ArrayList<String> productos = new ArrayList<>();
         ArrayList<Integer> valores = new ArrayList<>();
         for (String nombre: nombres) {
-        	productos.add(nombre + "\n ($" + Double.toString(hotel.getMenuHotel().get(nombre).getPrecio()) + ")");
+        	productos.add(nombre + "\n ($" + Double.toString(hotel.getMenuHotel().get(nombre).getPrecio()) + " c/u)");
         	valores.add(hotel.getMenuHotel().get(nombre).getUnidadesVendidas());
         }
         
