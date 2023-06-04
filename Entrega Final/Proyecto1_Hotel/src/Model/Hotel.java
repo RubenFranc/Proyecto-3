@@ -103,11 +103,11 @@ public class Hotel {
 	}
 	
 	public void registrarRelacion(double tarifa, double consumo) {
-		this.relacionPrecioRestauranteHabitacion.put(tarifa, consumo);
+		this.relacionPrecioRestauranteHabitacion.put(tarifa, relacionPrecioRestauranteHabitacion.get(tarifa) + consumo);
 	}
 	
 	public void registrarRelacionServicio(double tarifa, double precioServicio) {
-		this.relacionPrecioServiciosHabitacion.put(tarifa, precioServicio);
+		this.relacionPrecioServiciosHabitacion.put(tarifa, relacionPrecioServiciosHabitacion.get(tarifa) + precioServicio);
 	}
 	
 	public String escogerPasarela(String nombrePasarela) throws IOException {

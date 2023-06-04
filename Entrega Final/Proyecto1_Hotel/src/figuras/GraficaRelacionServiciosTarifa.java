@@ -26,7 +26,7 @@ public class GraficaRelacionServiciosTarifa {
         
         for (double tarifa: llaves) {
         	tarifas.add(tarifa);
-        	consumos.add(hotel.getRelacion().get(tarifa));
+        	consumos.add(hotel.getRelacionServicio().get(tarifa));
         }
         
         XYChart chart = new XYChartBuilder().width(800).height(600).build();
