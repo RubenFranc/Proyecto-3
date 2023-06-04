@@ -17,7 +17,6 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.jupiter.api.Test;
 
-import Consola.AplicacionPrincipal;
 import Controlador.ControladorAdministrador;
 import Controlador.ControladorPersistencia;
 import Controlador.ControladorRecepcionista;
