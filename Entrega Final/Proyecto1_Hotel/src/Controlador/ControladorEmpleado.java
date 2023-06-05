@@ -87,7 +87,7 @@ public class ControladorEmpleado {
 		factura += "---------------------------------------\n";
 		factura += "Total a pagar: $" + servicio.getPrecio();
 		
-		if (!cargarALaCuenta) {
+		if (cargarALaCuenta) {
 			hotel.registrarValorFactura(habitacion.getFechaInicio().split("/")[1], servicio.getPrecio());
 		}
 		
