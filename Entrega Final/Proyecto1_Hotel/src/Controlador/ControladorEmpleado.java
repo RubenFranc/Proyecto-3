@@ -87,6 +87,10 @@ public class ControladorEmpleado {
 		factura += "---------------------------------------\n";
 		factura += "Total a pagar: $" + servicio.getPrecio();
 		
+		if (!cargarALaCuenta) {
+			hotel.registrarValorFactura(habitacion.getFechaInicio().split("/")[1], servicio.getPrecio());
+		}
+		
 		double tarifa = habitacion.getTarifa();
 		if (hotel.getModificacionesHabitaciones().keySet().contains(habitacion.getTipoHabitacion())) {
 			if (hotel.getModificacionesHabitaciones().get(habitacion.getTipoHabitacion()).containsKey(habitacion.getFechaInicio())) {
@@ -122,6 +126,10 @@ public class ControladorEmpleado {
 			factura += detalleConsumo;
 			factura += "---------------------------------------\n";
 			factura += "Total a pagar: $" + total;
+			
+			if (cargarALaCuenta) {
+				hotel.registrarValorFactura(habitacion.getFechaInicio().split("/")[1], total);
+			}
 			
 			//Encontrar tarifa habitación
 			double tarifa = habitacion.getTarifa();
